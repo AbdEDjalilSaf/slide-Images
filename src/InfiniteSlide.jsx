@@ -1,53 +1,5 @@
 import React, { useEffect, useState } from 'react';
 
-// const slideItems = [/* Your slide content goes here */];
-
-// function InfiniteSlide() {
-//   const [currentSlide, setCurrentSlide] = useState(0);
-
-//   // Function to handle moving to the next slide
-//   const nextSlide = () => {
-//     setCurrentSlide((prevSlide) => (prevSlide + 1) % slideItems.length);
-//   };
-
-//   // Function to handle moving to the previous slide
-//   const prevSlide = () => {
-//     setCurrentSlide((prevSlide) =>
-//       prevSlide === 0 ? slideItems.length - 1 : prevSlide - 1
-//     );
-//   };
-
-//   return (
-//     <div className="infinite-slide-container">
-//       <button onClick={prevSlide}>Previous</button>
-//       <div className="slide">
-//         {/* Display the current slide content */}
-//         {slideItems[currentSlide]}
-//       </div>
-//       <button onClick={nextSlide}>Next</button>
-//     </div>
-//   );
-// }
-
-// export default InfiniteSlide;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// ------------------------------//
 // import Landing from './Landing';
 
 let InfiniteSlide = ({
