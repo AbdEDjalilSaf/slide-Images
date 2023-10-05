@@ -3,29 +3,29 @@ import React, { useEffect, useRef, useState } from 'react';
 
 const Login = () => {
 
-// let userRef = useRef();
-// let errRef = useRef();
+let userRef = useRef();
+let errRef = useRef();
 
-// let [user,setUser]= useState('');
-// let [pwd,setPwd]= useState('');
-// let [errMsg,seterrMsg]= useState('');
-// let [success,setSuccess]= useState(false);
+let [user,setUser]= useState('');
+let [pwd,setPwd]= useState('');
+let [errMsg,seterrMsg]= useState('');
+let [success,setSuccess]= useState(false);        
   
-// useEffect(()=>{
-//   userRef.current.focus();
-// },[]);
+useEffect(()=>{
+  userRef.current.focus();
+},[]);
   
-// useEffect(()=>{
-//   seterrMsg('')
-// },[user,pwd]);                               
+useEffect(()=>{
+  seterrMsg('')
+},[user,pwd]);                               
 
 
-// let hindleSubmit =  (e)=>{
-//   e.preventDefault();
+let hindleSubmit =  (e)=>{
+  e.preventDefault();
 
-//     setSuccess(true);
+    setSuccess(true);
 
-// }
+}
 
 
 return (

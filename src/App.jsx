@@ -1,5 +1,4 @@
 import React from "react";
-import Login from "./Login";
 
 
 // function App() {
@@ -18,26 +17,7 @@ import Login from "./Login";
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// 
 
 
 
@@ -46,9 +26,7 @@ import Login from "./Login";
 import { createContext, useContext, useState } from 'react'
 import reactLogo from './assets/react.svg'
 import Navbar from './Navbar'
-// import Landing from './Landing'
 import InfiniteSlide from './InfiniteSlide'
-// import AuthProvide from './Auth'
 import './App.css'
 import axios from 'axios'
 
@@ -63,6 +41,7 @@ function App() {
     '/image/5.jpeg',
     ];
 
+    
   return (
     <>
       <div className='hidden linkHome md:flex bg-black lg:w-full  mx-auto text-white md:gap-28   justify-center items-center lg:justify-evenly lg:gap-80'>
