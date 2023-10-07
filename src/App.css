@@ -30,25 +30,15 @@
   background-size: cover;
   background-position: center center;
   min-height: 100vh;
-}
-/*
-span::before{
-  position: absolute;
-  bottom: 0;
-  left: 0;
   width: 100%;
-  height: 0;
-  transition: 0.7s;
-
 }
-
-span:hover{
-  height: 100%;
-  top: 0;
-  left: 0;
-  color: #fff;
-  background-color: rgb(29 78 216);
-} */
+.frl{
+  background: url(/image/hero-2.jpg);
+  background-size: cover;
+  background-position: center center;
+  min-height: 100vh;
+  width: 100%;
+}
 .textSm{
   font-size: 13.5px;
   font-weight: 600;
@@ -62,12 +52,12 @@ margin: 0 auto;
 top:calc( 35% - 68px);
 }
 .stack{
-  place-items: center;
+place-items: center;
 justify-content: center;
 align-items: center;
 margin: 0 auto;
-  top:calc( 85% - 68px);
-  background: transparent;
+top:calc( 85% - 68px);
+background: transparent;
 }
 .stack img{
   background: transparent;
@@ -92,10 +82,74 @@ gap: 175px;
 }
 .bordeo{
   transition: 0.2s ease;
-}
-.bordeo:hover{
-  border: 2px solid #555;
+  border: 1.7px solid #555;
 }
 .image{
   min-height: calc(100vh - 120px);
+}
+
+.textwidth{
+width: calc(100vw - 50px);
+position: absolute;
+font-size: 15px;
+padding:  0 30px;
+left: 0%;
+top: 29%;
+}
+.lineparag{
+line-height: 2;
+margin-bottom: 26px;
+}
+.textbutton{
+  font-size: 15px;
+}
+@media (min-width:600px) {
+  .textwidth{
+    width: 510px;
+  }
+}
+@media (min-width:768px) {
+  .textwidth{
+    width: 450px;
+    left: 13%;
+    padding:  0;
+  }
+}
+.leftArrow{
+  position: absolute;
+  margin-left: 10px;
+  left: 0;
+  top: 50%;
+  display: none;
+}
+.rightArrow{
+  position: absolute;
+  margin-right: 10px;
+  right: 0;
+  top: 50%;
+  display: none;
+}
+@media (min-width:768px) {
+  .leftArrow{
+    display: block;
+  }
+  .rightArrow{
+    display: block;
+  }
+  .leftArrowOne{
+    display: none;
+  }
+  .leftArrowTwo{
+    display: none;
+  }
+}
+.leftArrowOne{
+  position: absolute;
+  width: 14px;
+  left: 4%;
+}
+.leftArrowTwo{
+  position: absolute;
+  width: 14px;
+  left: 67%;
 }
