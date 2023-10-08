@@ -131,10 +131,10 @@ margin-bottom: 26px;
 }
 @media (min-width:768px) {
   .leftArrow{
-    display: block;
+    display: none;
   }
   .rightArrow{
-    display: block;
+    display: none;
   }
   .leftArrowOne{
     display: none;
@@ -147,9 +147,73 @@ margin-bottom: 26px;
   position: absolute;
   width: 14px;
   left: 4%;
+  display: none;
 }
 .leftArrowTwo{
   position: absolute;
   width: 14px;
   left: 67%;
+  display: none;
 }
+.linkMedia{
+  position: absolute;
+  left: 13%;
+  width: 200px;
+  bottom: 0%;
+}
+@media (max-width:767px) {
+  .linkMedia{
+    bottom: 3%;
+    left: 5%;
+  }
+  .bannerImg{
+    width: calc(100% - 70px);
+    max-width: 510px;
+  }
+  .bannerText{
+    width: calc(100% - 70px);
+    max-width: 510px;
+  }
+  .bannerText h2{
+    line-height: 1.5;
+    margin: 10px 0;
+   font-size:calc(12px + (200 - 12) * ((100vw - 320px) / (1920 - 320)));
+  }
+}
+.bannerText h2{
+  font-size:36px;
+}
+.lineSpan{
+  border: 1px solid #000;
+}
+
+.shoesAppThree,
+.shoesAppTwo,
+.shoesAppOne{
+  width: calc(100% - 50px);
+  margin-left: 20px ;
+  margin-right: 20px ;
+
+}
+#bannerTextMore{
+  margin-right: -50px;
+}
+/* .shoesAppTwo{
+  width: calc((100% - 10px));
+} */
+@media (min-width:768px) {
+  .shoesAppTwo{
+    margin-left: -100px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
