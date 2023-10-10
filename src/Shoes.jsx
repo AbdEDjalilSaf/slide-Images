@@ -6,7 +6,7 @@ function Shoes() {
   <div>
 <div  className='flex flex-col md:flex-row-reverse justify-center items-center shoesAppOne mb-16'>
 <img src='/image/banner-1.jpg' className='bannerImg'/>
-<div className='bannerText' id='bannerTextMore'>
+<div className='bannerText' id='bannerTextMoreOne'>
 <h2 className=''>Clothing<br /> Collections 2030</h2>
 <div>
 <button className='borderBottom'>S H O P <span className='ml-3'>N O W</span></button>
@@ -14,6 +14,7 @@ function Shoes() {
 </div>
 </div>
 </div>
+<div className='twinUnited'>
 <div  className='flex flex-col  justify-center   items-center shoesAppTwo mb-16'>
 <img src='/image/banner-2.jpg' className='bannerImg'/>
 <div className='bannerText text-left'>
@@ -31,6 +32,7 @@ function Shoes() {
 <div>
 <button className='borderBottom'>S H O P <span className='ml-3'>N O W</span></button>
 <span className='lineSpan flex w-28 rounded transition-all hover:w-20'></span>
+</div>
 </div>
 </div>
 </div>
