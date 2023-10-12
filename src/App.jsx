@@ -4,6 +4,7 @@ import InfiniteSlide from './InfiniteSlide'
 import Shoes from './Shoes'
 import './App.css'
 import Sellers from "./Sellers";
+import Collection from "./Collection"
 
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
       </div>
 <Shoes />
 <Sellers />
+<Collection />
 
 
 
