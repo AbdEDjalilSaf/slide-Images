@@ -374,6 +374,11 @@ display: flex;
 justify-content: center;
 align-items: center;
   }
+  .coponPrix{
+    top: -40px;
+    right: 5%;
+  }
+  
 }
 @media (min-width:600px) {
   .collectImg{
@@ -381,15 +386,25 @@ display: flex;
 justify-content: center;
 align-items: center;
   }
+  .coponPrix{
+    top: -55px;
+    right: 25%;
+  }
 }
 @media (min-width:768px) {
-  .collectImg{
-display: flex;
-justify-content: center;
-align-items: center;
+  .bgSite{
+    padding-left: 160px;
+    gap: 25px;
+  }
+  .coponPrix{
+    top: -55px;
+    right: 30%;
   }
   .timeNumber{
     width: calc(100% - 120px);
+  }
+  .multiText h2{
+    font-size: 45px;
   }
 }
 @media (max-width:599px) {
@@ -407,25 +422,83 @@ align-items: center;
     font-size:16px;
   }
 }
-@media (min-width:600px) {
-  .multiText h2{
-   font-size: 45px;
-  }
+ @media (min-width:600px) {
   .timeNumber{
     gap: calc(12px + (200 - 12) * ((100vw - 320px) / (1920 - 320)));
     font-size:35px;
   }
+  .String{
+    font-size:19px;
+  }
 }
 .timeNumber{
-  margin: 15px 0;
+  margin: 20px 0;
 }
-
-
-
-
-
-
-
+@media (min-width:992px) {
+  .collect{
+    display: flex;
+    align-items: center;
+    gap: 35px;
+    flex-direction: row;
+  }
+  .bgSite{
+    width: fit-content;
+    padding-left: 75px;
+    gap: 13px;
+  }
+  .coponPrix{
+    top: -55px;
+    right: 25%;
+  }
+  .multiText h2{
+    font-size: 25px;
+  }
+  .String{
+    font-size: 15px;
+  }
+  .timeNumber{
+    width: calc(80% - 120px);
+    gap: 20px;
+  }
+  .collectImg{
+    min-width: 50%;
+  }
+  .nine{
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .gotoRight{
+font-size: 25px;
+  }
+  #gotoCenter{
+    font-size: 33px;
+  }
+  .multiText h2{
+    width: 100%;
+    font-size: 32px;
+  }
+}
+@media (min-width:1200px) {
+  .timeNumber{
+    gap: 33px;
+    padding-right: 5px;
+  }
+  .gotoRight{
+    font-size: 32px;
+      }
+      #gotoCenter{
+        font-size: 37px;
+    }
+    .bgSite{
+      gap: 23px;
+    }
+}
+@media (min-width:1500px) {
+.coponPrix{
+  top: -55px;
+  right: 28%;
+}
+}
 
 
 
