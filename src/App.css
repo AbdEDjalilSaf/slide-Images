@@ -501,6 +501,7 @@ font-size: 25px;
 }
 .fitwidth{
   font-size: calc(5px + (200 - 12) * ((100vw - 320px) / (1920 - 320)));
+  width: 100%;
 }
 
 @media (width >= 480px) {
@@ -562,9 +563,21 @@ align-items: center; */
   padding: 0 10px;
   gap: 18px;
 }
+.lates{
+  font-size: 15px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.cardtext{
+  width: calc(100% - 50px);
 
-
-
+}
+@media (width >= 576px) {
+ 
+  /* .App{
+    gap: 5px;
+  } */
+}
 
 
 

@@ -6,6 +6,7 @@ import './App.css'
 import Sellers from "./Sellers";
 import Collection from "./Collection"
 import Instegram from "./Instegram"
+import Trends from "./Trends"
 
 function App() {
 
@@ -48,7 +49,7 @@ function App() {
 <Sellers />
 <Collection />
 <Instegram />
-
+<Trends />
 
 
 
