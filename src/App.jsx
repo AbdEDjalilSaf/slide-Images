@@ -5,7 +5,7 @@ import Shoes from './Shoes'
 import './App.css'
 import Sellers from "./Sellers";
 import Collection from "./Collection"
-
+import Instegram from "./Instegram"
 
 function App() {
 
@@ -47,7 +47,7 @@ function App() {
 <Shoes />
 <Sellers />
 <Collection />
-
+<Instegram />
 
 
 

@@ -3,23 +3,29 @@ import './App.css';
 
 
 function Collection() {
-let [days,setDays] = useState(30);
-let [hours,setHours] = useState(58);
-let [minute,setMinute] = useState(34);
-let [second,setSecond] = useState(57);
 
-// useEffect(()=>{
-// setInterval(setSecond(second - 1),1000);
-// },[])
-let secondMove = ()=>{
-    setSecond(second - 1);
-    if(second === 0){
-        setSecond(59);
-        setMinute(minute - 1);
-    }
+// let appendZero = (value) => (value < 10 ? "0" + value : value);
+
+let [time,setTime] = useState(new Date());
+
+useEffect(()=>{
+
+let interValid = setInterval(()=>{
+     setTime(new Date());
+},1000);
+
+return ()=>{
+    clearInterval(interValid);
 }
 
-setInterval(secondMove,1800);
+},[]);
+
+// let day = appendZero(time.getDay());
+// let hour = appendZero(time.getHours());
+// let minutes = appendZero(time.getMinutes());
+// let seconds = appendZero(time.getSeconds());
+
+
   return (
     <div className='collect py-28 flex flex-col gap-3'>
 <div className='bg-white text-black  bgSite flex flex-col gap-3 rounded py-12 pl-5'>
@@ -39,26 +45,21 @@ setInterval(secondMove,1800);
 <h4 className="text-red-500 text-left  font-semibold">DEAL OF THE WEEK</h4>
 <h2 className='text-4xl font-semibold'>Multi-pocket Chest Bag Black</h2>
 <div>
-    <div className='timeNumber  flex'>
-<span className='daysNumber flex flex-col items-center gap-2'>30<h4 className='String '>Days</h4></span>
+    {/* <div className='timeNumber  flex'>
+<span className='daysNumber flex flex-col items-center gap-2'>{day}<h4 className='String '>Days</h4></span>
 <span>:</span>
-<span className='hourNumber flex flex-col items-center gap-2'>57<h4 className='String'>Hours</h4></span>
+<span className='hourNumber flex flex-col items-center gap-2'>{hour}<h4 className='String'>Hours</h4></span>
 <span>:</span>
-<span className='minuteNumber flex flex-col items-center gap-2'>{minute}<h4 className='String'>Minutes</h4></span>
+<span className='minuteNumber flex flex-col items-center gap-2'>{minutes}<h4 className='String'>Minutes</h4></span>
 <span>:</span>
-<span className='secondNumber flex flex-col items-center gap-2' onChange={secondMove}>{second}<h4 className='String'>Seconds</h4></span>
-    </div>
+<span className='secondNumber flex flex-col items-center gap-2' >{seconds}<h4 className='String'>Seconds</h4></span>
+    </div> */}
+    <iframe  src="https://w2.countingdownto.com/5048537" frameborder="0" className='fitwidth'></iframe>
 </div>
 <button className="bg-black text-white w-fit textbutton font-semibold py-4 px-11"> S H O P <span className="ml-3">N O W </span></button>
 </div>
 </div>
-
-
-
-
-
-
-        
+     
     </div>
   )
 }
