@@ -573,13 +573,29 @@ align-items: center; */
 
 }
 @media (width >= 576px) {
- 
-  /* .App{
-    gap: 5px;
-  } */
+.card{
+  width: 500px;
 }
+.App{
+  display: flex;
+  justify-content: center;
+}
+}
+@media (width >= 576px) {
+  .card{
+    width: 700px;
+  }
 
-
+}
+@media (width >= 900px) {
+  .App{
+display: flex;
+gap: 30px;
+  }
+  .card{
+    width: 360px;
+  }
+}
 
 
 
