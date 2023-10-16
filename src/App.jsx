@@ -7,6 +7,7 @@ import Sellers from "./Sellers";
 import Collection from "./Collection"
 import Instegram from "./Instegram"
 import Trends from "./Trends"
+import FooterHome from "./FooterHome"
 
 function App() {
 
@@ -50,7 +51,7 @@ function App() {
 <Collection />
 <Instegram />
 <Trends />
-
+<FooterHome />
 
 
 
