@@ -640,7 +640,13 @@ width: 95%;
 .footerEnd{
 border-top: 1px solid #555;
 }
-
+@media (width >= 576px) {
+  .footerEnd {
+    /* font-size: 15px; */
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
 
 
 
