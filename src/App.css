@@ -638,7 +638,7 @@ width: 95%;
   }
 }
 .footerEnd{
-  width: 100%;
+border-top: 1px solid #555;
 }
 
 

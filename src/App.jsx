@@ -8,6 +8,7 @@ import Collection from "./Collection"
 import Instegram from "./Instegram"
 import Trends from "./Trends"
 import FooterHome from "./FooterHome"
+import FooterEnd from "./FooterEnd"
 
 function App() {
 
@@ -52,7 +53,7 @@ function App() {
 <Instegram />
 <Trends />
 <FooterHome />
-
+<FooterEnd />
 
 
 
