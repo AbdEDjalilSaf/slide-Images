@@ -585,11 +585,11 @@ align-items: center; */
   .card{
     width: 700px;
   }
-}
+} 
 @media (width >= 900px) {
   .App{
 display: flex;
-gap: 30px;
+gap: 60px;
   }
   .card{
     width: 360px;
@@ -601,6 +601,47 @@ gap: 30px;
 .borderBottom{
   border-bottom: 2px solid #fff;
 }
+.widthButton{
+width: 95%;
+}
+@media (width >= 576px) {
+  .footerApp{
+    display: grid;
+    grid-template-columns: repeat(2,minmax(0, 1fr));
+    gap: 15px;
+  }
+}
+@media (width >= 768px) {
+  .footerApp{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3,minmax(0, 1fr));
+  }
+}
+@media (width >= 992px) {
+  .footerApp{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(4,minmax(0, 1fr));
+  }
+}
+@media (width >= 1200px) {
+  .footerApp{
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(4,minmax(0, 1fr));
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  .widthmale{
+    padding-right: 20px;
+  }
+}
+.footerEnd{
+  width: 100%;
+}
+
+
 
 
 
