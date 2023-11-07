@@ -246,39 +246,127 @@ margin-right: 60px;
     width: calc(60% - 50px);
     margin-left: 450px;
   }
-
-
 }
 
 
 .bgCenter{
-  background-repeat: no-repeat;
   background-position: center center;
-  width: calc(100% - 30px);
+  width: calc(100% - 50px);
 }
-@media (max-width:767px) {
+@media (max-width:575px) {
   .bgCenter{
     min-height:250px;
   }
 }
+@media (min-width:576px) {
+  .bgAll{
+display: grid;
+grid-template-columns: repeat(2,minmax(0,1fr));
+gap: 15px;
+padding: 0 20px;
+  }
+.bgCenter{
+  width: calc(100% - 50px);
+  min-height: 200px;
+}
+}
+@media (min-width:768px) {
+  .bgCenter{
+  width: calc(100% - 60px);
+  }
+}
+@media (min-width:992px) {
+  .bgAll{
+    display: grid;
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    gap: 15px;
+    padding: 0 10px;
+    }
+    .ulLink{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  gap: 80px;
+    }
+    .divFit{
+      display: flex;
+      gap: 80px;
+    }
+}
+@media (min-width:1200px) {
+  .bgAll{
+    display: grid;
+    grid-template-columns: repeat(4,minmax(0,1fr));
+    gap: 25px;
+    padding: 0 130px;
+    }
+}
 .active{
   color: #000;
 }
-.hiddenAdd::before{
-content: "+ Add To Cart";
-position: absolute;
+.hiddenAdd{
 background-color: #fff;
 color: #f00;
 width: 100%;
-height: 100%;
-top: 0;
-left: 0;
+/* height: 100%; */
+
 }
 
+.sale::before{
+  content: "SALE";
+  position: absolute;
+  font-size: 14px;
+  left: 0;
+  top: 10%;
+  background-color: #000;
+  color: #fff;
+  padding: 2px 19px;
+}
+.fale::before{
+  content: "NEW";
+  position: absolute;
+  font-size: 13px;
+  left: 0;
+  top: 10%;
+  background-color: #fff;
+  color: #000;
+  padding: 2px 19px;
+}
+.collect{
+background-color: #f3f2ee;
+}
 
-
-
-
+.gotoRight{
+  margin-right: -150px;
+}
+@media (max-width:476px) {
+  .bgSite{
+    width: calc((100% / 2));
+  }
+}
+@media (min-width:477px) {
+  .bgSite{
+    width: fit-content;
+    gap: 22px;
+  }
+  .gotoRight{
+font-size: 33px;
+  }
+  #gotoCenter{
+    font-size: 40px;
+  }
+}
+@media (min-width:600px) {
+  .bgSite{
+    width: calc((100% / 4));
+  }
+}
+@media (min-width:600px) {
+  .bgSite{
+    width: fit-content;
+    padding-left: 120px;
+  }
+}
 
 
 
