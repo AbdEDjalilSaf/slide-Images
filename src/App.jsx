@@ -5,7 +5,14 @@ import Shoes from './Shoes'
 import './App.css'
 import Sellers from "./Sellers";
 import Collection from "./Collection"
+<<<<<<< HEAD
 
+=======
+import Instegram from "./Instegram"
+import Trends from "./Trends"
+import FooterHome from "./FooterHome"
+import FooterEnd from "./FooterEnd"
+>>>>>>> 9fb0325f3155a8dcd0470754a3b200fa365887a2
 
 function App() {
 
@@ -47,10 +54,17 @@ function App() {
 <Shoes />
 <Sellers />
 <Collection />
+<<<<<<< HEAD
 
 
 
 
+=======
+<Instegram />
+<Trends />
+<FooterHome />
+<FooterEnd />
+>>>>>>> 9fb0325f3155a8dcd0470754a3b200fa365887a2
 
 
 
