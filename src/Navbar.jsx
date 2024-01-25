@@ -18,9 +18,9 @@ return (
 
 
 <div className=" gap-3 hidden md:flex items-center">
-<img src="/image/search.png" className="lg:h-4"/>
-<img src="/image/heart.png" className="lg:h-4"/>
-<img src="/image/cart.png" className="lg:h-4"/>
+<LazyLoadImage src="/image/search.png" className="lg:h-4"/>
+<LazyLoadImage src="/image/heart.png" className="lg:h-4"/>
+<LazyLoadImage src="/image/cart.png" className="lg:h-4"/>
 <span className="w-4 text-black hidden lg:block">$0.00</span>
 </div>
 
